@@ -1,11 +1,13 @@
 using System.Collections.Generic;
+using System.Linq;
 using SimpleApi.Controllers.Models;
 
 namespace SimpleApi.Controllers.Data
 {
     public class MockCommand : ICommand
     {
-        public IEnumerable<Command> GetAll()
+        
+        private static List<Command> CommandList()
         {
             var commands = new List<Command>()
             {
@@ -17,10 +19,16 @@ namespace SimpleApi.Controllers.Data
             };
             return commands;
         }
+        
+        public IEnumerable<Command> GetAll()
+        {
+            var commands = CommandList();
+            return commands;
+        }
 
         public Command GetCommandSingleById(int id)
         {
-            return new Command {Id = 0, AccessUser = false, Name = "Jesper Petersen", RankNumber = 1};
+            return CommandList().FirstOrDefault(x => x.Id == id);
         }
     }
 }
