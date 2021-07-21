@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleApi", "SimpleApi\SimpleApi.csproj", "{B469EB56-6FCA-41DA-8EA1-3B6EC2F25594}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleApi.Xunit.Test", "SimpleApi.Xunit.Test\SimpleApi.Xunit.Test.csproj", "{70AEB909-7E28-4914-A38B-EC0F90FC3C39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B469EB56-6FCA-41DA-8EA1-3B6EC2F25594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B469EB56-6FCA-41DA-8EA1-3B6EC2F25594}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B469EB56-6FCA-41DA-8EA1-3B6EC2F25594}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B469EB56-6FCA-41DA-8EA1-3B6EC2F25594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70AEB909-7E28-4914-A38B-EC0F90FC3C39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70AEB909-7E28-4914-A38B-EC0F90FC3C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70AEB909-7E28-4914-A38B-EC0F90FC3C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70AEB909-7E28-4914-A38B-EC0F90FC3C39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
