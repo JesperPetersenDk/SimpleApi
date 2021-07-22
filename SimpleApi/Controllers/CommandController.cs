@@ -12,7 +12,12 @@ namespace SimpleApi.Controllers
     [ApiController]
     public class CommandController : ControllerBase
     {
-        private readonly MockCommand _mockCommand = new MockCommand();
+        private readonly MockCommand _mockCommand;
+
+        public CommandController(MockCommand mockCommand)
+        {
+            _mockCommand = mockCommand;
+        }
 
         // GET api/cm
         [HttpGet]
@@ -25,9 +30,8 @@ namespace SimpleApi.Controllers
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
-                throw;
                 return NotFound(e.Message);
+                throw;
             }
         }
 
