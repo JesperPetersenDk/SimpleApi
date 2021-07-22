@@ -46,8 +46,7 @@ namespace SimpleApi.Controllers
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
-                throw;
+                return NotFound(e.Message);
             }
         }
     }
