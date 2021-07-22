@@ -31,7 +31,6 @@ namespace SimpleApi.Controllers
             catch (Exception e)
             {
                 return NotFound(e.Message);
-                throw;
             }
         }
 
