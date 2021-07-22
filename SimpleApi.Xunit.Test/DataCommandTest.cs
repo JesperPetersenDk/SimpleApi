@@ -23,7 +23,7 @@ namespace SimpleApi.Xunit.Test
         [InlineData(0, "Jesper Petersen")]
         [InlineData(1, "Freja Hansen")]
         [InlineData(2, "Mette Willumsen")]
-        public void GetDataSameById_Single(int id, string name)
+        public void GetDataNotSameById_Single(int id, string name)
         {
             var result = _mockCommand.GetCommandSingleById(id);
             Assert.NotSame(result, name);
