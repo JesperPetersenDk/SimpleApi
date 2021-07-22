@@ -12,9 +12,9 @@ namespace SimpleApi.Controllers
     [ApiController]
     public class CommandController : ControllerBase
     {
-        private readonly MockCommand _mockCommand;
+        private readonly ICommand _mockCommand;
 
-        public CommandController(MockCommand mockCommand)
+        public CommandController(ICommand mockCommand)
         {
             _mockCommand = mockCommand;
         }
