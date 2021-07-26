@@ -6,7 +6,7 @@ namespace SimpleApi.Controllers.Data
 {
     public interface ICommand
     {
-        IEnumerable<Command> GetAll();
+        List<Command> GetAll();
         Command GetCommandSingleById(int id);
     }
 }

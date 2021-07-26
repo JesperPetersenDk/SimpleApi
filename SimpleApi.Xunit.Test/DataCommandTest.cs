@@ -66,5 +66,23 @@ namespace SimpleApi.Xunit.Test
             var result = _mockCommand.GetAll();
             Assert.NotNull(result);
         }
+
+        [Theory]
+        [InlineData(1)]
+        [InlineData(2)]
+        [InlineData(3)]
+        [InlineData(4)]
+        public void GetDataCount(int valueData)
+        {
+            var result = _mockCommand.GetAll().Count;
+            Assert.NotEqual(result, valueData);
+        }
+
+        [Fact]
+        public void GetDataIsSame()
+        {
+            var resultSameOne = _mockCommand.GetAll();
+            Assert.Same(resultSameOne, resultSameOne);
+        }
     }
 }

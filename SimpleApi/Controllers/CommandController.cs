@@ -34,7 +34,6 @@ namespace SimpleApi.Controllers
             }
         }
 
-        
         //GET api/cm/{id}
         [HttpGet("/{id}")]
         public ActionResult <Command> GetSingleById(int id)

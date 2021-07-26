@@ -20,7 +20,7 @@ namespace SimpleApi.Controllers.Data
             return commands;
         }
         
-        public IEnumerable<Command> GetAll()
+        public List<Command> GetAll()
         {
             var commands = CommandList();
             return commands;
